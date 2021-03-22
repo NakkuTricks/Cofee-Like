@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.scss">
+    <title>Creonit layout</title>
+</head>
+<body>
+    <main class="product-card">
+        <div class="container">
+            <section class="product-card__list">
+                <h2 class="visually-hidden">Карточка с описанием товара</h2>
+                <article class="product-card__item">
+                    <ul class="tag">
+                        <li class="tag-item tag-item_orange">Сорт недели</li>
+                        <li class="tag-item tag-item_green">Новинка</li>
+                    </ul>
+                    <div class="product-card__preview">
+                        <div class="product-card__preview-wrapper"><img class="product-card__preview-img" src="./image/Бразилия-Серрадо.png" alt="Кофе Бразилия Серрадо"></div>
+                        <ul class="product-card__properties">
+                            <li class="product-card__properties-item">
+                                <div class="product-card__properties-wrapper">
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active product-card__properties-scale_margin-none"></span>
+                                </div>
+                                <p class="product-card__properties-text">Кислотность</p>
+                            </li>
+                            <li class="product-card__properties-item">
+                                <div class="product-card__properties-wrapper">
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive product-card__properties-scale_margin-none"></span>
+                                </div>
+                                <p class="product-card__properties-text">Плотность</p>
+                            </li>
+                            <li class="product-card__properties-item">
+                                <div class="product-card__properties-wrapper">
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive product-card__properties-scale_margin-none"></span>
+                                </div>
+                                <p class="product-card__properties-text">Крепость</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product-card__statistics">
+                        <div class="product-card__rating">
+                            <div class="product-card__rating-wrapper">
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_active">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_active">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_active">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_active">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_active">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <p class="product-card__rating-text">5,0</p>
+                        </div>
+                        <div class="product-card__feedback">
+                            <svg class="product-card__feedback-icon">
+                                <use href="./image/svg/svg.svg#icon-feedback"></use>
+                            </svg>
+                            <a href="#" class="product-card__feedback-text">21 отзыв</a>
+                        </div>
+                    </div>
+                    <div class="product-card__description">
+                        <h2 class="product-card__title">Бразилия Серрадо</h2>
+                        <p class="product-card__text">
+                            Кофе натуральный в зернах, 100% арабика (местные разновидности бурбона), средняя обжарка, во вкусе...
+                        </p>
+                    </div>
+                    <form class="product-card__form">
+                        <div class="product-card__selection">
+                            <label class="product-card__selection-item">
+                                <span class="product-card__selection-text">Фасовка</span>
+                                <select class="product-card__weight" name="product-card__weight">
+                                    <option value="250">250 г</option>
+                                    <option value="500">500 г</option>
+                                    <option value="1000">1000 г</option>
+                                </select>
+                            </label>
+                            <label class="product-card__selection-item product-card__selection-item_margin-none">
+                                <span class="product-card__selection-text">Помол</span>
+                                <select class="product-card__weight" name="product-card__grind">
+                                    <option value="filter">Фильтр</option>
+                                    <option value="middle">Средний</option>
+                                    <option value="large">Крупный</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="product-card__calculation">
+                            <div class="product-card__count">
+                                <button class="product-card__count-button product-card__count-button_decrement">
+                                    
+                                </button>
+                                <input type="text" class="product-card__count-number" value="2" />
+                                <button class="product-card__count-button product-card__count-button_border">
+                                    <svg class="product-card__count-increment">
+                                        <use href="./image/svg/svg.svg#icon-increment"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="product-card__summ">
+                                <p class="product-card__price">1690 ₽</p>
+                                <button class="product-card__button" type="submit">
+                                    <svg class="product-card__button-basket">
+                                        <use href="./image/svg/svg.svg#icon-basket"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </article>
+                <article class="product-card__item">
+                    <ul class="tag">
+                        <li class="tag-item tag-item_blue">Популярный</li>
+                    </ul>
+                    <div class="product-card__preview">
+                        <div class="product-card__preview-wrapper"><img class="product-card__preview-img" src="./image/Колумбия-Уила.png" alt="Кофе Колумбия Уила"></div>
+                        <ul class="product-card__properties">
+                            <li class="product-card__properties-item">
+                                <div class="product-card__properties-wrapper">
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active product-card__properties-scale_margin-none"></span>
+                                </div>
+                                <p class="product-card__properties-text">Кислотность</p>
+                            </li>
+                            <li class="product-card__properties-item">
+                                <div class="product-card__properties-wrapper">
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive product-card__properties-scale_margin-none"></span>
+                                </div>
+                                <p class="product-card__properties-text">Плотность</p>
+                            </li>
+                            <li class="product-card__properties-item">
+                                <div class="product-card__properties-wrapper">
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive product-card__properties-scale_margin-none"></span>
+                                </div>
+                                <p class="product-card__properties-text">Крепость</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product-card__statistics">
+                        <div class="product-card__rating">
+                            <div class="product-card__rating-wrapper">
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_active">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_active">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_active">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_active">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_inactive">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <p class="product-card__rating-text">4,6</p>
+                        </div>
+                        <div class="product-card__feedback">
+                            <svg class="product-card__feedback-icon">
+                                <use href="./image/svg/svg.svg#icon-feedback"></use>
+                            </svg>
+                            <a href="#" class="product-card__feedback-text">74 отзыва</a>
+                        </div>
+                    </div>
+                    <div class="product-card__description">
+                        <h2 class="product-card__title">Колумбия Уила</h2>
+                        <p class="product-card__text">
+                            Делаешь первые шаги в приготовлении кофе? Пора попробовать Колумбию Уила! Это сбалансированны...
+                        </p>
+                    </div>
+                    <form class="product-card__form">
+                        <div class="product-card__selection">
+                            <label class="product-card__selection-item">
+                                <span class="product-card__selection-text">Фасовка</span>
+                                <select class="product-card__weight" name="product-card__weight">
+                                    <option value="250">250 г</option>
+                                    <option value="500">500 г</option>
+                                    <option value="1000">1000 г</option>
+                                </select>
+                            </label>
+                            <label class="product-card__selection-item product-card__selection-item_margin-none">
+                                <span class="product-card__selection-text">Помол</span>
+                                <select class="product-card__weight" name="product-card__grind">
+                                    <option value="filter">Фильтр</option>
+                                    <option value="middle">Средний</option>
+                                    <option value="large">Крупный</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="product-card__calculation">
+                            <div class="product-card__count">
+                                <button class="product-card__count-button product-card__count-button_decrement">
+                                    
+                                </button>
+                                <input type="text" class="product-card__count-number" value="1" />
+                                <button class="product-card__count-button product-card__count-button_border">
+                                    <svg class="product-card__count-increment">
+                                        <use href="./image/svg/svg.svg#icon-increment"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="product-card__summ">
+                                <p class="product-card__price">750 ₽</p>
+                                <button class="product-card__button" type="submit">
+                                    <svg class="product-card__button-basket">
+                                        <use href="./image/svg/svg.svg#icon-basket"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </article>
+                <article class="product-card__item">
+                    <div class="product-card__preview">
+                        <div class="product-card__preview-wrapper"><img class="product-card__preview-img" src="./image/Эфиопия-Иргачефф.png" alt="Кофе Эфиопия Иргачефф"></div>
+                        <ul class="product-card__properties">
+                            <li class="product-card__properties-item">
+                                <div class="product-card__properties-wrapper">
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active product-card__properties-scale_margin-none"></span>
+                                </div>
+                                <p class="product-card__properties-text">Кислотность</p>
+                            </li>
+                            <li class="product-card__properties-item">
+                                <div class="product-card__properties-wrapper">
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive product-card__properties-scale_margin-none"></span>
+                                </div>
+                                <p class="product-card__properties-text">Плотность</p>
+                            </li>
+                            <li class="product-card__properties-item">
+                                <div class="product-card__properties-wrapper">
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive product-card__properties-scale_margin-none"></span>
+                                </div>
+                                <p class="product-card__properties-text">Крепость</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product-card__statistics">
+                        <div class="product-card__rating">
+                            <div class="product-card__rating-wrapper">
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_active">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_active">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_active">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_active">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_active">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <p class="product-card__rating-text">5,0</p>
+                        </div>
+                        <div class="product-card__feedback">
+                            <svg class="product-card__feedback-icon">
+                                <use href="./image/svg/svg.svg#icon-feedback"></use>
+                            </svg>
+                            <a href="#" class="product-card__feedback-text">7 отзывов</a>
+                        </div>
+                    </div>
+                    <div class="product-card__description">
+                        <h2 class="product-card__title">Эфиопия Иргачефф</h2>
+                        <p class="product-card__text">
+                            Настало время попробовать что-то из мира specialty кофе? Начни с Эфиопии Иргачефф. Яркая, с нотами...
+                        </p>
+                    </div>
+                    <form class="product-card__form">
+                        <div class="product-card__selection">
+                            <label class="product-card__selection-item">
+                                <span class="product-card__selection-text">Фасовка</span>
+                                <select class="product-card__weight" name="product-card__weight">
+                                    <option value="250">250 г</option>
+                                    <option value="500">500 г</option>
+                                    <option value="1000">1000 г</option>
+                                </select>
+                            </label>
+                            <label class="product-card__selection-item product-card__selection-item_margin-none">
+                                <span class="product-card__selection-text">Помол</span>
+                                <select class="product-card__weight" name="product-card__grind">
+                                    <option value="filter">Фильтр</option>
+                                    <option value="middle">Средний</option>
+                                    <option value="large">Крупный</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="product-card__calculation">
+                            <div class="product-card__count">
+                                <button class="product-card__count-button product-card__count-button_decrement">
+                                    
+                                </button>
+                                <input type="text" class="product-card__count-number" value="1" />
+                                <button class="product-card__count-button product-card__count-button_border">
+                                    <svg class="product-card__count-increment">
+                                        <use href="./image/svg/svg.svg#icon-increment"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="product-card__summ">
+                                <p class="product-card__price">935 ₽</p>
+                                <button class="product-card__button" type="submit">
+                                    <svg class="product-card__button-basket">
+                                        <use href="./image/svg/svg.svg#icon-basket"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </article>
+                <article class="product-card__item">
+                    <ul class="tag">
+                        <li class="tag-item tag-item_green">Новинка</li>
+                    </ul>
+                    <div class="product-card__preview">
+                        <div class="product-card__preview-wrapper"><img class="product-card__preview-img" src="./image/Бурунди-Яндаро.png" alt="Кофе Бурунди Яндаро"></div>
+                        <ul class="product-card__properties">
+                            <li class="product-card__properties-item">
+                                <div class="product-card__properties-wrapper">
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active product-card__properties-scale_margin-none"></span>
+                                </div>
+                                <p class="product-card__properties-text">Кислотность</p>
+                            </li>
+                            <li class="product-card__properties-item">
+                                <div class="product-card__properties-wrapper">
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive product-card__properties-scale_margin-none"></span>
+                                </div>
+                                <p class="product-card__properties-text">Плотность</p>
+                            </li>
+                            <li class="product-card__properties-item">
+                                <div class="product-card__properties-wrapper">
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive product-card__properties-scale_margin-none"></span>
+                                </div>
+                                <p class="product-card__properties-text">Крепость</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product-card__description">
+                        <h2 class="product-card__title">Бурунди Яндаро</h2>
+                        <p class="product-card__text">
+                            Для начинающих ценителей рекомендуем Бурунди Яндаро. Этот кофе подарит сложный и интересный...
+                        </p>
+                    </div>
+                    <form class="product-card__form">
+                        <div class="product-card__selection">
+                            <label class="product-card__selection-item">
+                                <span class="product-card__selection-text">Фасовка</span>
+                                <select class="product-card__weight" name="product-card__weight">
+                                    <option value="250">250 г</option>
+                                    <option value="500">500 г</option>
+                                    <option value="1000">1000 г</option>
+                                </select>
+                            </label>
+                            <label class="product-card__selection-item product-card__selection-item_margin-none">
+                                <span class="product-card__selection-text">Помол</span>
+                                <select class="product-card__weight" name="product-card__grind">
+                                    <option value="filter">Фильтр</option>
+                                    <option value="middle">Средний</option>
+                                    <option value="large">Крупный</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="product-card__calculation">
+                            <div class="product-card__count">
+                                <button class="product-card__count-button product-card__count-button_decrement">
+                                    
+                                </button>
+                                <input type="text" class="product-card__count-number" value="1" />
+                                <button class="product-card__count-button product-card__count-button_border">
+                                    <svg class="product-card__count-increment">
+                                        <use href="./image/svg/svg.svg#icon-increment"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="product-card__summ">
+                                <p class="product-card__price">750 ₽</p>
+                                <button class="product-card__button" type="submit">
+                                    <svg class="product-card__button-basket">
+                                        <use href="./image/svg/svg.svg#icon-basket"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </article>
+                <article class="product-card__item">
+                    <ul class="tag">
+                        <li class="tag-item tag-item_orange">Сорт недели</li>
+                        <li class="tag-item tag-item_green">Новинка</li>
+                    </ul>
+                    <div class="product-card__preview">
+                        <div class="product-card__preview-wrapper"><img class="product-card__preview-img" src="./image/Бразилия-Серрадо.png" alt="Кофе Бразилия Серрадо"></div>
+                        <ul class="product-card__properties">
+                            <li class="product-card__properties-item">
+                                <div class="product-card__properties-wrapper">
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active product-card__properties-scale_margin-none"></span>
+                                </div>
+                                <p class="product-card__properties-text">Кислотность</p>
+                            </li>
+                            <li class="product-card__properties-item">
+                                <div class="product-card__properties-wrapper">
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive product-card__properties-scale_margin-none"></span>
+                                </div>
+                                <p class="product-card__properties-text">Плотность</p>
+                            </li>
+                            <li class="product-card__properties-item">
+                                <div class="product-card__properties-wrapper">
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive product-card__properties-scale_margin-none"></span>
+                                </div>
+                                <p class="product-card__properties-text">Крепость</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product-card__statistics">
+                        <div class="product-card__rating">
+                            <div class="product-card__rating-wrapper">
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_active">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_active">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_active">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_active">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_active">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <p class="product-card__rating-text">5,0</p>
+                        </div>
+                        <div class="product-card__feedback">
+                            <svg class="product-card__feedback-icon">
+                                <use href="./image/svg/svg.svg#icon-feedback"></use>
+                            </svg>
+                            <a href="#" class="product-card__feedback-text">21 отзыв</a>
+                        </div>
+                    </div>
+                    <div class="product-card__description">
+                        <h2 class="product-card__title">Бразилия Серрадо</h2>
+                        <p class="product-card__text">
+                            Кофе натуральный в зернах, 100% арабика (местные разновидности бурбона), средняя обжарка, во вкусе...
+                        </p>
+                    </div>
+                    <form class="product-card__form">
+                        <div class="product-card__selection">
+                            <label class="product-card__selection-item">
+                                <span class="product-card__selection-text">Фасовка</span>
+                                <select class="product-card__weight" name="product-card__weight">
+                                    <option value="250">250 г</option>
+                                    <option value="500">500 г</option>
+                                    <option value="1000">1000 г</option>
+                                </select>
+                            </label>
+                            <label class="product-card__selection-item product-card__selection-item_margin-none">
+                                <span class="product-card__selection-text">Помол</span>
+                                <select class="product-card__weight" name="product-card__grind">
+                                    <option value="filter">Фильтр</option>
+                                    <option value="middle">Средний</option>
+                                    <option value="large">Крупный</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="product-card__calculation">
+                            <div class="product-card__count">
+                                <button class="product-card__count-button product-card__count-button_decrement">
+                                    
+                                </button>
+                                <input type="text" class="product-card__count-number" value="2" />
+                                <button class="product-card__count-button product-card__count-button_border">
+                                    <svg class="product-card__count-increment">
+                                        <use href="./image/svg/svg.svg#icon-increment"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="product-card__summ">
+                                <p class="product-card__price">1690 ₽</p>
+                                <button class="product-card__button" type="submit">
+                                    <svg class="product-card__button-basket">
+                                        <use href="./image/svg/svg.svg#icon-basket"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </article>
+                <article class="product-card__item">
+                    <ul class="tag">
+                        <li class="tag-item tag-item_blue">Популярный</li>
+                    </ul>
+                    <div class="product-card__preview">
+                        <div class="product-card__preview-wrapper"><img class="product-card__preview-img" src="./image/Колумбия-Уила.png" alt="Кофе Колумбия Уила"></div>
+                        <ul class="product-card__properties">
+                            <li class="product-card__properties-item">
+                                <div class="product-card__properties-wrapper">
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active product-card__properties-scale_margin-none"></span>
+                                </div>
+                                <p class="product-card__properties-text">Кислотность</p>
+                            </li>
+                            <li class="product-card__properties-item">
+                                <div class="product-card__properties-wrapper">
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive product-card__properties-scale_margin-none"></span>
+                                </div>
+                                <p class="product-card__properties-text">Плотность</p>
+                            </li>
+                            <li class="product-card__properties-item">
+                                <div class="product-card__properties-wrapper">
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive product-card__properties-scale_margin-none"></span>
+                                </div>
+                                <p class="product-card__properties-text">Крепость</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product-card__statistics">
+                        <div class="product-card__rating">
+                            <div class="product-card__rating-wrapper">
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_active">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_active">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_active">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_active">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_inactive">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <p class="product-card__rating-text">4,6</p>
+                        </div>
+                        <div class="product-card__feedback">
+                            <svg class="product-card__feedback-icon">
+                                <use href="./image/svg/svg.svg#icon-feedback"></use>
+                            </svg>
+                            <a href="#" class="product-card__feedback-text">74 отзыва</a>
+                        </div>
+                    </div>
+                    <div class="product-card__description">
+                        <h2 class="product-card__title">Колумбия Уила</h2>
+                        <p class="product-card__text">
+                            Делаешь первые шаги в приготовлении кофе? Пора попробовать Колумбию Уила! Это сбалансированны...
+                        </p>
+                    </div>
+                    <form class="product-card__form">
+                        <div class="product-card__selection">
+                            <label class="product-card__selection-item">
+                                <span class="product-card__selection-text">Фасовка</span>
+                                <select class="product-card__weight" name="product-card__weight">
+                                    <option value="250">250 г</option>
+                                    <option value="500">500 г</option>
+                                    <option value="1000">1000 г</option>
+                                </select>
+                            </label>
+                            <label class="product-card__selection-item product-card__selection-item_margin-none">
+                                <span class="product-card__selection-text">Помол</span>
+                                <select class="product-card__weight" name="product-card__grind">
+                                    <option value="filter">Фильтр</option>
+                                    <option value="middle">Средний</option>
+                                    <option value="large">Крупный</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="product-card__calculation">
+                            <div class="product-card__count">
+                                <button class="product-card__count-button product-card__count-button_decrement">
+                                    
+                                </button>
+                                <input type="text" class="product-card__count-number" value="1" />
+                                <button class="product-card__count-button product-card__count-button_border">
+                                    <svg class="product-card__count-increment">
+                                        <use href="./image/svg/svg.svg#icon-increment"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="product-card__summ">
+                                <p class="product-card__price">750 ₽</p>
+                                <button class="product-card__button" type="submit">
+                                    <svg class="product-card__button-basket">
+                                        <use href="./image/svg/svg.svg#icon-basket"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </article>
+                <article class="product-card__item">
+                    <div class="product-card__preview">
+                        <div class="product-card__preview-wrapper"><img class="product-card__preview-img" src="./image/Эфиопия-Иргачефф.png" alt="Кофе Эфиопия Иргачефф"></div>
+                        <ul class="product-card__properties">
+                            <li class="product-card__properties-item">
+                                <div class="product-card__properties-wrapper">
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active product-card__properties-scale_margin-none"></span>
+                                </div>
+                                <p class="product-card__properties-text">Кислотность</p>
+                            </li>
+                            <li class="product-card__properties-item">
+                                <div class="product-card__properties-wrapper">
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive product-card__properties-scale_margin-none"></span>
+                                </div>
+                                <p class="product-card__properties-text">Плотность</p>
+                            </li>
+                            <li class="product-card__properties-item">
+                                <div class="product-card__properties-wrapper">
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive product-card__properties-scale_margin-none"></span>
+                                </div>
+                                <p class="product-card__properties-text">Крепость</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product-card__statistics">
+                        <div class="product-card__rating">
+                            <div class="product-card__rating-wrapper">
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_active">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_active">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_active">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_active">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_active">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <p class="product-card__rating-text">5,0</p>
+                        </div>
+                        <div class="product-card__feedback">
+                            <svg class="product-card__feedback-icon">
+                                <use href="./image/svg/svg.svg#icon-feedback"></use>
+                            </svg>
+                            <a href="#" class="product-card__feedback-text">7 отзывов</a>
+                        </div>
+                    </div>
+                    <div class="product-card__description">
+                        <h2 class="product-card__title">Эфиопия Иргачефф</h2>
+                        <p class="product-card__text">
+                            Настало время попробовать что-то из мира specialty кофе? Начни с Эфиопии Иргачефф. Яркая, с нотами...
+                        </p>
+                    </div>
+                    <form class="product-card__form">
+                        <div class="product-card__selection">
+                            <label class="product-card__selection-item">
+                                <span class="product-card__selection-text">Фасовка</span>
+                                <select class="product-card__weight" name="product-card__weight">
+                                    <option value="250">250 г</option>
+                                    <option value="500">500 г</option>
+                                    <option value="1000">1000 г</option>
+                                </select>
+                            </label>
+                            <label class="product-card__selection-item product-card__selection-item_margin-none">
+                                <span class="product-card__selection-text">Помол</span>
+                                <select class="product-card__weight" name="product-card__grind">
+                                    <option value="filter">Фильтр</option>
+                                    <option value="middle">Средний</option>
+                                    <option value="large">Крупный</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="product-card__calculation">
+                            <div class="product-card__count">
+                                <button class="product-card__count-button product-card__count-button_decrement">
+                                    
+                                </button>
+                                <input type="text" class="product-card__count-number" value="1" />
+                                <button class="product-card__count-button product-card__count-button_border">
+                                    <svg class="product-card__count-increment">
+                                        <use href="./image/svg/svg.svg#icon-increment"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="product-card__summ">
+                                <p class="product-card__price">935 ₽</p>
+                                <button class="product-card__button" type="submit">
+                                    <svg class="product-card__button-basket">
+                                        <use href="./image/svg/svg.svg#icon-basket"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </article>
+                <article class="product-card__item">
+                    <ul class="tag">
+                        <li class="tag-item tag-item_green">Новинка</li>
+                    </ul>
+                    <div class="product-card__preview">
+                        <div class="product-card__preview-wrapper"><img class="product-card__preview-img" src="./image/Бурунди-Яндаро.png" alt="Кофе Бурунди Яндаро"></div>
+                        <ul class="product-card__properties">
+                            <li class="product-card__properties-item">
+                                <div class="product-card__properties-wrapper">
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active product-card__properties-scale_margin-none"></span>
+                                </div>
+                                <p class="product-card__properties-text">Кислотность</p>
+                            </li>
+                            <li class="product-card__properties-item">
+                                <div class="product-card__properties-wrapper">
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive product-card__properties-scale_margin-none"></span>
+                                </div>
+                                <p class="product-card__properties-text">Плотность</p>
+                            </li>
+                            <li class="product-card__properties-item">
+                                <div class="product-card__properties-wrapper">
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive product-card__properties-scale_margin-none"></span>
+                                </div>
+                                <p class="product-card__properties-text">Крепость</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product-card__description">
+                        <h2 class="product-card__title">Бурунди Яндаро</h2>
+                        <p class="product-card__text">
+                            Для начинающих ценителей рекомендуем Бурунди Яндаро. Этот кофе подарит сложный и интересный...
+                        </p>
+                    </div>
+                    <form class="product-card__form">
+                        <div class="product-card__selection">
+                            <label class="product-card__selection-item">
+                                <span class="product-card__selection-text">Фасовка</span>
+                                <select class="product-card__weight" name="product-card__weight">
+                                    <option value="250">250 г</option>
+                                    <option value="500">500 г</option>
+                                    <option value="1000">1000 г</option>
+                                </select>
+                            </label>
+                            <label class="product-card__selection-item product-card__selection-item_margin-none">
+                                <span class="product-card__selection-text">Помол</span>
+                                <select class="product-card__weight" name="product-card__grind">
+                                    <option value="filter">Фильтр</option>
+                                    <option value="middle">Средний</option>
+                                    <option value="large">Крупный</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="product-card__calculation">
+                            <div class="product-card__count">
+                                <button class="product-card__count-button product-card__count-button_decrement">
+                                    
+                                </button>
+                                <input type="text" class="product-card__count-number" value="1" />
+                                <button class="product-card__count-button product-card__count-button_border">
+                                    <svg class="product-card__count-increment">
+                                        <use href="./image/svg/svg.svg#icon-increment"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="product-card__summ">
+                                <p class="product-card__price">750 ₽</p>
+                                <button class="product-card__button" type="submit">
+                                    <svg class="product-card__button-basket">
+                                        <use href="./image/svg/svg.svg#icon-basket"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </article>
+                <article class="product-card__item">
+                    <ul class="tag">
+                        <li class="tag-item tag-item_orange">Сорт недели</li>
+                        <li class="tag-item tag-item_green">Новинка</li>
+                    </ul>
+                    <div class="product-card__preview">
+                        <div class="product-card__preview-wrapper"><img class="product-card__preview-img" src="./image/Бразилия-Серрадо.png" alt="Кофе Бразилия Серрадо"></div>
+                        <ul class="product-card__properties">
+                            <li class="product-card__properties-item">
+                                <div class="product-card__properties-wrapper">
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active product-card__properties-scale_margin-none"></span>
+                                </div>
+                                <p class="product-card__properties-text">Кислотность</p>
+                            </li>
+                            <li class="product-card__properties-item">
+                                <div class="product-card__properties-wrapper">
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive product-card__properties-scale_margin-none"></span>
+                                </div>
+                                <p class="product-card__properties-text">Плотность</p>
+                            </li>
+                            <li class="product-card__properties-item">
+                                <div class="product-card__properties-wrapper">
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_active"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive"></span>
+                                    <span class="product-card__properties-scale product-card__properties-scale_inactive product-card__properties-scale_margin-none"></span>
+                                </div>
+                                <p class="product-card__properties-text">Крепость</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product-card__statistics">
+                        <div class="product-card__rating">
+                            <div class="product-card__rating-wrapper">
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_active">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_active">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_active">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_active">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="product-card__rating-star product-card__rating-star_active">
+                                        <use href="./image/svg/svg.svg#icon-star"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <p class="product-card__rating-text">5,0</p>
+                        </div>
+                        <div class="product-card__feedback">
+                            <svg class="product-card__feedback-icon">
+                                <use href="./image/svg/svg.svg#icon-feedback"></use>
+                            </svg>
+                            <a href="#" class="product-card__feedback-text">21 отзыв</a>
+                        </div>
+                    </div>
+                    <div class="product-card__description">
+                        <h2 class="product-card__title">Бразилия Серрадо</h2>
+                        <p class="product-card__text">
+                            Кофе натуральный в зернах, 100% арабика (местные разновидности бурбона), средняя обжарка, во вкусе...
+                        </p>
+                    </div>
+                    <form class="product-card__form">
+                        <div class="product-card__selection">
+                            <label class="product-card__selection-item">
+                                <span class="product-card__selection-text">Фасовка</span>
+                                <select class="product-card__weight" name="product-card__weight">
+                                    <option value="250">250 г</option>
+                                    <option value="500">500 г</option>
+                                    <option value="1000">1000 г</option>
+                                </select>
+                            </label>
+                            <label class="product-card__selection-item product-card__selection-item_margin-none">
+                                <span class="product-card__selection-text">Помол</span>
+                                <select class="product-card__weight" name="product-card__grind">
+                                    <option value="filter">Фильтр</option>
+                                    <option value="middle">Средний</option>
+                                    <option value="large">Крупный</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="product-card__calculation">
+                            <div class="product-card__count">
+                                <button class="product-card__count-button product-card__count-button_decrement">
+                                    
+                                </button>
+                                <input type="text" class="product-card__count-number" value="2" />
+                                <button class="product-card__count-button product-card__count-button_border">
+                                    <svg class="product-card__count-increment">
+                                        <use href="./image/svg/svg.svg#icon-increment"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="product-card__summ">
+                                <p class="product-card__price">1690 ₽</p>
+                                <button class="product-card__button" type="submit">
+                                    <svg class="product-card__button-basket">
+                                        <use href="./image/svg/svg.svg#icon-basket"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </article>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
