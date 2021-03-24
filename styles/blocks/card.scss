@@ -307,11 +307,18 @@
         justify-content: center;
         align-items: center;
 
+        padding: 7px;
+
         background-color: white;
     }
 
     &__count-button_decrement {
         border: none;
+
+        &:hover::after {
+            transition-duration: 0.75s;
+            background-color: #00A75D;
+        }
 
         &::after {
             display: inline-block;
@@ -414,8 +421,8 @@
         border-radius: 50px;
 
         &:hover {
-            transition-duration: 0.75s;
-            background: $green;
+            background: linear-gradient(90deg, rgba(0,167,93,1) 0%, rgba(0,167,93,1) 100%);
+            box-shadow: none;
         }
 
         @media (max-width: 400px) {
