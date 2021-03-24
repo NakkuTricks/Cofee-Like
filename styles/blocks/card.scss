@@ -3,9 +3,36 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
 
-        padding: 0 20px;
+        padding: 0 10px;
+    }
+
+    &__wrapper {
+        display: flex;
+
+        width: 33.333%;
+
+        padding-right: 28px;
+        margin-top: 56px;
+
+        @media (min-width: 1160px) {
+            &:nth-of-type(3n) {
+                padding-right: 0;
+            }
+        }
+
+        @media (max-width: 1160px) {
+            width: 50%;
+
+            &:nth-of-type(2n) {
+                padding-right: 0;
+            }
+        }
+
+        @media (max-width: 800px) {
+            width: 100%;
+            padding-right: 0;
+        }
     }
 
     &__item {
@@ -14,10 +41,8 @@
 
         position: relative;
 
-        width: calc(33.333% - 28px);
+        width: 100%;
 
-        margin-top: 56px;
-        margin-right: 28px;
         padding-left: 24px;
         padding-right: 18px;
         padding-bottom: 24px;
@@ -26,26 +51,10 @@
         box-sizing: border-box;
         border-radius: 4px;
 
-        &:nth-of-type(3n) {
-            margin-right: 0;
-        }
 
         &:hover {
             transition-duration: 0.75s;
             border-color: $green;
-        }
-
-        @media (max-width: 1160px) {
-            width: calc(50% - 28px);
-
-            &:nth-of-type(2n) {
-                margin-right: 0;
-            }
-        }
-
-        @media (max-width: 800px) {
-            width: 100%;
-            margin-right: 0;
         }
 
         @media (max-width: 400px) {
@@ -70,7 +79,7 @@
     &__preview-wrapper {
         display: flex;
         position: relative;
-        
+
         width: 178px;
 
         @media (max-width: 400px) {
@@ -130,7 +139,7 @@
     &__properties-scale_margin-none {
         margin-right: 0;
     }
-    
+
     &__properties-scale_active {
         background-color: $green;
     }
@@ -216,6 +225,11 @@
 
     &__text {
         line-height: 20px;
+
+        -webkit-line-clamp: 3;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
 
     &__form {
@@ -260,12 +274,12 @@
 
         border: none;
         border-bottom: 1px solid $green-light;
-        
+
         appearance: none;
         background-image: url(/image/svg/Arrow-down.svg);
         background-repeat: no-repeat, repeat;
         background-position: right 0 top 0, 0 0;
-        background-size: .65em auto, 100%; 
+        background-size: .65em auto, 100%;
 
         &:hover {
             transition-duration: 0.75s;
@@ -332,6 +346,7 @@
         &:hover {
             transition-duration: 0.75s;
             background-color: $green;
+
             .product-card__count-increment {
                 stroke: white;
             }
