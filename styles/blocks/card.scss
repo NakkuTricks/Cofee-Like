@@ -317,7 +317,7 @@
 
         &:hover::after {
             transition-duration: 0.75s;
-            background-color: #00A75D;
+            background-color: $green;
         }
 
         &::after {
