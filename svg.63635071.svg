@@ -1,0 +1,20 @@
+<svg display="none" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon-arrow-down" viewBox="0 0 12 7">
+        <path opacity="0.4" d="M1 1L6 6L11 1" stroke="#00A75D"/>
+    </symbol>
+    <symbol id="icon-decrement" viewBox="0 0 16 2">
+        <path opacity="0.2" d="M16 1H0" stroke="#101010" stroke-width="2"/>
+    </symbol>
+    <symbol id="icon-feedback" viewBox="0 0 18 16">
+        <path d="M0.25 0.125V10.125H2.75V13.3086L3.76562 12.4883L6.71484 10.125H12.75V0.125H0.25ZM1.5 1.375H11.5V8.875H6.28516L6.10938 9.01172L4 10.6914V8.875H1.5V1.375ZM14 2.625V3.875H16.5V11.375H14V13.1914L11.7148 11.375H7.02734L5.46484 12.625H11.2852L15.25 15.8086V12.625H17.75V2.625H14Z" fill="#00A75D"/>
+    </symbol>
+    <symbol id="icon-increment" viewBox="0 0 16 16">
+        <path d="M8 0V16M16 8H0" stroke-width="2"/>
+    </symbol>
+    <symbol id="icon-star" viewBox="0 0 14 13">
+        <path d="M7 0L8.85152 4.4516L13.6574 4.83688L9.99583 7.9734L11.1145 12.6631L7 10.15L2.8855 12.6631L4.00417 7.9734L0.342604 4.83688L5.14848 4.4516L7 0Z"/>
+    </symbol>
+    <symbol id="icon-basket" viewBox="0 0 26 22">
+        <path d="M4.9 0L2.4 6.5h2l1.7-4.7h13.4l1.8 4.7h2L20.7 0h-16zM0 7.3v5.5h1.2L3.9 22h17.9l2.7-9.2h1.2V7.3H0zm1.8 1.9h22V11h-.7l-2.7 9.2H5.3L2.5 11h-.7V9.2zm6.4 2.7v6.4h1.9V12H8.3zm3.7 0v6.4h1.8V12H12zm3.7 0v6.4h1.8V12h-1.8z"/>
+    </symbol>
+</svg>
